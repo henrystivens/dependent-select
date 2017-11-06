@@ -1,5 +1,5 @@
-dependent-selects:
-  container_name: dependent-selects
+dependent-select:
+  container_name: dependent-select
   dockerfile: Dockerfile
   build: .  
   ports:
