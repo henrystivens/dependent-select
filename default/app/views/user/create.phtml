@@ -1,0 +1,38 @@
+<h1>Crear usuario</h1>
+<?= Html::linkAction('', 'Listar usuarios', 'class="button"') ?>
+<?php View::content() ?>
+<?= Form::open() ?>
+<div class="row">
+    <div class="six columns">
+        <label for="user_region_id">Región</label>
+        <?= Form::dbSelect('user.region_id', 'nombre', array('region', 'all'), '- Seleccione -'); ?>        
+    </div>   
+</div>
+<div class="row">    
+    <div class="six columns">
+        <label for="user_comuna_id">Comuna</label>
+        <div id='div_comunas'></div>
+    </div>
+</div>
+<div class="row">
+    <div class="six columns">
+        <label for="user_ciudad_id">Ciudad</label>
+        <div id='div_ciudades'></div>     
+    </div>   
+</div>
+<input class="button-primary" value="Enviar" type="submit">
+<?= Form::close() ?>
+
+<script type='text/javascript'>
+    $(document).on('change', "#user_region_id", function () {
+        var region_id = $('#user_region_id').val();
+        $.ajax({
+            type: "POST",
+            url: "<?php echo PUBLIC_PATH . 'user/getComunas/'; ?>",
+            data: "region_id=" + region_id,
+            success: function (html) {
+                $("#div_comunas").html(html);
+            }
+        });
+    });
+</script>

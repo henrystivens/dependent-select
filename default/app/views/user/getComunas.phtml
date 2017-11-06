@@ -1,0 +1,15 @@
+<?= Form::dbSelect("user.comuna_id", 'nombre', array('comuna', 'buscar', $region_id), '- Seleccione -'); ?>		
+
+<script type='text/javascript'>
+    $("#user_comuna_id").change(function () {
+        var comuna_id = $('#user_comuna_id').val();
+        $.ajax({
+            type: "POST",
+            url: "<?php echo PUBLIC_PATH . 'user/getCiudades/'; ?>",
+            data: "comuna_id=" + comuna_id,
+            success: function (html) {
+                $("#div_ciudades").html(html);
+            }
+        });
+    });
+</script>

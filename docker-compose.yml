@@ -1,0 +1,10 @@
+dependent-selects:
+  container_name: dependent-selects
+  dockerfile: Dockerfile
+  build: .  
+  ports:
+   - "8183:80"
+  volumes:
+   - .:/var/www  
+  external_links:
+   - mysql-dev:mysql
