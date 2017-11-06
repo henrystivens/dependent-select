@@ -21,7 +21,7 @@ class UserController extends AppController
 
     public function getComunas()
     {
-        //No es necsario el template
+        //No es necesario el template
         View::template(null);
         //Carga la variable $region_id en la vista
         $this->region_id = Input::post('region_id');
@@ -29,7 +29,7 @@ class UserController extends AppController
 
     public function getCiudades()
     {
-        //No es necsario el template
+        //No es necesario el template
         View::template(null);
         //Carga la variable $comuna_id en la vista
         $this->comuna_id = Input::post('comuna_id');
