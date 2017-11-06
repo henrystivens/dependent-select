@@ -1,7 +1,7 @@
-<?= Form::dbSelect("user.comuna_id", 'nombre', array('comuna', 'buscar', $region_id), '- Seleccione -'); ?>		
+<?= Form::dbSelect("user.comuna_id", 'nombre', array('comuna', 'allByRegion', $region_id), '- Seleccione -'); ?>		
 
 <script type='text/javascript'>
-    $("#user_comuna_id").change(function () {
+    $(document).on('change', "#user_comuna_id", function () {    
         var comuna_id = $('#user_comuna_id').val();
         $.ajax({
             type: "POST",
