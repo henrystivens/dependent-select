@@ -13,7 +13,7 @@
 class Comuna extends ActiveRecord
 {
 
-    public function buscar(int $region_id)
+    public function allByRegion(int $region_id)
     {
         return $this->find("region_id = $region_id", 'order: nombre');
     }

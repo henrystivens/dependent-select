@@ -13,7 +13,7 @@
 class Ciudad extends ActiveRecord
 {
 
-    public function buscar(int $comuna_id)
+    public function allByComuna(int $comuna_id)
     {
         return $this->find("comuna_id = $comuna_id", 'order: nombre');
     }
