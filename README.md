@@ -1,7 +1,7 @@
-Select aninados o Select dependientes
+Select anidado o Select dependientes
 ======
 
-Código del ejemplo de Select aninados o Select dependientes con KumbiaPHP 1.0RC
+Código del ejemplo de Select anidado o Select dependientes con KumbiaPHP 1.0RC
 
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/henrystivens/paginate-php/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/henrystivens/paginate-php/?branch=master)
 
