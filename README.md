@@ -1,7 +1,7 @@
 Select anidado o Select dependientes
 ======
 
-Código del ejemplo de Select anidado o Select dependientes con KumbiaPHP 1.0RC, del manual: [Select anidado o select dependientes](https://www.kumbiaphp.com/blog/2017/11/17/select-anidado-o-select-dependientes/)
+Código del ejemplo de Select anidados o Select dependientes con KumbiaPHP 1.0RC, del manual: [Select anidado o select dependientes](https://www.kumbiaphp.com/blog/2017/11/17/select-anidado-o-select-dependientes/)
 
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/henrystivens/dependent-select/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/henrystivens/dependent-select/?branch=master)
 
